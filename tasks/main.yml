@@ -16,4 +16,10 @@
     validate: 'visudo -cf %s'
   tags:
     - sudo
+
+- user:
+    name: "{{ item }}"
+    groups: sudo
+    append: yes
+  with_items: "{{ sudo_users }}"
 ...
