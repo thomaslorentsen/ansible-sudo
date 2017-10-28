@@ -15,4 +15,5 @@
   become: yes
   roles:
     - {role: ansible-sudo, sudo_users: [travis, johnd]}
+    - {role: ansible-sudo, sudo_users: [travis, johnd, janed]}
 ...
