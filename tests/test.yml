@@ -4,6 +4,7 @@
     - {role: ansible-sudo}
 
 - hosts: localhost
+  become: yes
   roles:
     - {role: ansible-sudo, sudo_users: [travis]}
 ...
