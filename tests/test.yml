@@ -1,4 +1,12 @@
 ---
+
+- hosts: localhost
+  become: yes
+  tasks:
+    - user:
+        name: johnd
+        comment: "John Doe"
+
 - hosts: localhost
   roles:
     - {role: ansible-sudo}
@@ -6,5 +14,5 @@
 - hosts: localhost
   become: yes
   roles:
-    - {role: ansible-sudo, sudo_users: [travis]}
+    - {role: ansible-sudo, sudo_users: [travis, johnd]}
 ...
