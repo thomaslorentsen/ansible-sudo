@@ -5,5 +5,5 @@
 
 - hosts: localhost
   roles:
-    - {role: ansible-sudo, sudo_users: travis}
+    - {role: ansible-sudo, sudo_users: [travis]}
 ...
