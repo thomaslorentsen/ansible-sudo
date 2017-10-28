@@ -4,9 +4,9 @@ Configure sudo
 
 # Usage
 ```yaml
-  - {role: ansible-sudo}
+  - thomaslorentsen.ansible-sudo
 ```
 Add group to specified users
 ```yaml
-  - {role: ansible-sudo, sudo_users: [travis]}
+  - {role: thomaslorentsen.ansible-sudo, sudo_users: [travis]}
 ```
